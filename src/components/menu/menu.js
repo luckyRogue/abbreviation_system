@@ -33,11 +33,11 @@ const menuList = [
     children: [
       {
         label: "动态溯源",
-        link: "/",
+        link: "ToxicGasSystem-DynamicTraceability",
       },
       {
         label: "模拟扩散",
-        link: "/",
+        link: "ToxicGasSystem-SimulatedDiffusion",
       },
     ],
   },

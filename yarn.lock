@@ -1021,6 +1021,43 @@
   resolved "https://registry.npm.taobao.org/@soda/get-current-script/download/@soda/get-current-script-1.0.2.tgz#a53515db25d8038374381b73af20bb4f2e508d87"
   integrity sha1-pTUV2yXYA4N0OBtzryC7Ty5QjYc=
 
+"@turf/difference@^6.0.2":
+  version "6.5.0"
+  resolved "https://registry.nlark.com/@turf/difference/download/@turf/difference-6.5.0.tgz#677b0d5641a93bba2e82f2c683f0d880105b3197"
+  integrity sha1-Z3sNVkGpO7ougvLGg/DYgBBbMZc=
+  dependencies:
+    "@turf/helpers" "^6.5.0"
+    "@turf/invariant" "^6.5.0"
+    polygon-clipping "^0.15.3"
+
+"@turf/helpers@^6.5.0":
+  version "6.5.0"
+  resolved "https://registry.nlark.com/@turf/helpers/download/@turf/helpers-6.5.0.tgz#f79af094bd6b8ce7ed2bd3e089a8493ee6cae82e"
+  integrity sha1-95rwlL1rjOftK9PgiahJPubK6C4=
+
+"@turf/intersect@^6.1.3":
+  version "6.5.0"
+  resolved "https://registry.nlark.com/@turf/intersect/download/@turf/intersect-6.5.0.tgz#a14e161ddd0264d0f07ac4e325553c70c421f9e6"
+  integrity sha1-oU4WHd0CZNDwesTjJVU8cMQh+eY=
+  dependencies:
+    "@turf/helpers" "^6.5.0"
+    "@turf/invariant" "^6.5.0"
+    polygon-clipping "^0.15.3"
+
+"@turf/invariant@^6.5.0":
+  version "6.5.0"
+  resolved "https://registry.nlark.com/@turf/invariant/download/@turf/invariant-6.5.0.tgz#970afc988023e39c7ccab2341bd06979ddc7463f"
+  integrity sha1-lwr8mIAj45x8yrI0G9Bped3HRj8=
+  dependencies:
+    "@turf/helpers" "^6.5.0"
+
+"@turf/kinks@6.x":
+  version "6.5.0"
+  resolved "https://registry.nlark.com/@turf/kinks/download/@turf/kinks-6.5.0.tgz#80e7456367535365012f658cf1a988b39a2c920b"
+  integrity sha1-gOdFY2dTU2UBL2WM8amIs5oskgs=
+  dependencies:
+    "@turf/helpers" "^6.5.0"
+
 "@types/body-parser@*":
   version "1.19.1"
   resolved "https://registry.nlark.com/@types/body-parser/download/@types/body-parser-1.19.1.tgz?cache=0&sync_timestamp=1625595663636&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40types%2Fbody-parser%2Fdownload%2F%40types%2Fbody-parser-1.19.1.tgz#0c0174c42a7d017b818303d4b5d969cb0b75929c"
@@ -5010,6 +5047,21 @@ launch-editor@^2.2.1:
     chalk "^2.3.0"
     shell-quote "^1.6.1"
 
+leaflet.pm@^2.2.0:
+  version "2.2.0"
+  resolved "https://registry.nlark.com/leaflet.pm/download/leaflet.pm-2.2.0.tgz#adbe27c4abb2855909f80b776a85b60dbcc650fe"
+  integrity sha1-rb4nxKuyhVkJ+At3aoW2DbzGUP4=
+  dependencies:
+    "@turf/difference" "^6.0.2"
+    "@turf/intersect" "^6.1.3"
+    "@turf/kinks" "6.x"
+    lodash "^4.17.15"
+
+leaflet@^1.7.1:
+  version "1.7.1"
+  resolved "https://registry.npm.taobao.org/leaflet/download/leaflet-1.7.1.tgz#10d684916edfe1bf41d688a3b97127c0322a2a19"
+  integrity sha1-ENaEkW7f4b9B1oijuXEnwDIqKhk=
+
 lines-and-columns@^1.1.6:
   version "1.1.6"
   resolved "https://registry.npm.taobao.org/lines-and-columns/download/lines-and-columns-1.1.6.tgz#1c00c743b433cd0a4e80758f7b64a57440d9ff00"
@@ -6038,6 +6090,13 @@ pnp-webpack-plugin@^1.6.4:
   integrity sha1-ZXQThPbYBW824iVajWf/wghm9ck=
   dependencies:
     ts-pnp "^1.1.6"
+
+polygon-clipping@^0.15.3:
+  version "0.15.3"
+  resolved "https://registry.nlark.com/polygon-clipping/download/polygon-clipping-0.15.3.tgz#0215840438470ba2e9e6593625e4ea5c1087b4b7"
+  integrity sha1-AhWEBDhHC6Lp5lk2JeTqXBCHtLc=
+  dependencies:
+    splaytree "^3.1.0"
 
 portfinder@^1.0.26:
   version "1.0.28"
@@ -7264,6 +7323,11 @@ spdy@^4.0.2:
     http-deceiver "^1.2.7"
     select-hose "^2.0.0"
     spdy-transport "^3.0.0"
+
+splaytree@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.npm.taobao.org/splaytree/download/splaytree-3.1.0.tgz#17d4a0108a6da3627579690b7b847241e18ddec8"
+  integrity sha1-F9SgEIpto2J1eWkLe4RyQeGN3sg=
 
 split-string@^3.0.1, split-string@^3.0.2:
   version "3.1.0"
