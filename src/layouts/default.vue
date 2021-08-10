@@ -5,35 +5,37 @@
       collapsed-width="0"
       @collapse="onCollapse"
       @breakpoint="onBreakpoint"
+      width="300"
     >
-      <div class="logo" >36.4</div>
-    <Menu></Menu>
+      <div class="logo">多云36.4</div>
+      <Menu></Menu>
     </a-layout-sider>
     <a-layout>
-      <a-layout-header :style="{ background: '#fff', padding: 0, textAlign: 'center' }" >
-         铜陵经济开发区智慧园区安全环保监测系统
+      <a-layout-header class="header-x">
+        <img :src="logo" width="50" /> 铜陵经济开发区智慧园区安全环保监测系统
       </a-layout-header>
-      <a-layout-content :style="{ margin: '24px 16px 0' }">
-        <div
-          :style="{ padding: '24px', background: '#fff', minHeight: '360px' }"
-        >
-          <router-view></router-view>
-        </div>
+      <a-layout-content>
+        <router-view></router-view>
       </a-layout-content>
     </a-layout>
   </a-layout>
 </template>
 <script>
 import { Layout } from "ant-design-vue";
-import Menu from '@/components/menu'
+import Menu from "@/components/menu";
+import logo from "@/assets/logo.png";
 export default {
   components: {
-    'a-layout': Layout,
-    'a-layout-sider': Layout.Sider,
-    'a-layout-header': Layout.Header,
-    'a-layout-content': Layout.Content,
-    Menu
-
+    "a-layout": Layout,
+    "a-layout-sider": Layout.Sider,
+    "a-layout-header": Layout.Header,
+    "a-layout-content": Layout.Content,
+    Menu,
+  },
+  data() {
+    return {
+      logo,
+    };
   },
   methods: {
     onCollapse(collapsed, type) {
@@ -46,14 +48,23 @@ export default {
 };
 </script>
 
-<style>
-.layout-x{
+<style scoped>
+.layout-x {
   height: 100%;
 }
 .layout-x .logo {
-  height: 32px;
-  background: rgba(255, 255, 255, 0.2);
-  margin: 16px;
+  height: 40px;
+  line-height: 40px;
+  background: #000127;
+  margin: 16px 30px;
   color: #fff;
+  padding: 0 30px;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.8);
+}
+.header-x {
+  font-size: 24px;
+  color: #fff;
+  text-align: center;
 }
 </style>
